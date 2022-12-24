@@ -20,25 +20,25 @@ const showMole = `<img src="Assets/mole.png" id="mole-img">`;
 
 //change Difficulty  
 const changeMode = () => {
-     switch(select.value){
-     case'1':
-          speed = 1000;
-          break;
-     case'2':
-          speed = 850;
-          break;
-     case'3':
-          speed = 600;
-          break;
-     case'4':
-          speed = 450; 
+     switch (select.value) {
+          case '1':
+               speed = 1000;
+               break;
+          case '2':
+               speed = 850;
+               break;
+          case '3':
+               speed = 600;
+               break;
+          case '4':
+               speed = 450;
      }
 }
 
 //get random position
 const randomPosition = () => {
      let randomSquare = Math.floor(Math.random() * gridSize);
-     while(prevMolePosition === randomSquare) {
+     while (prevMolePosition === randomSquare) {
           randomSquare = Math.floor(Math.random() * gridSize);
      }
      prevMolePosition = randomSquare;
@@ -80,14 +80,14 @@ const checkGameTimer = () => {
           clearInterval(moleInterval);
           gameStarted = false;
           gameTimeCount = 15;
-          squares[parseInt(gridSize/2)].innerHTML = `Your Score Is ${scoreCounter}`;
+          squares[parseInt(gridSize / 2)].innerHTML = `Your Score Is ${scoreCounter}`;
           let mole = document.querySelector('.mole');
           mole.innerHTML = '';
      }
 }
 //count score
 const countScore = () => {
-     if(gameStarted){
+     if (gameStarted) {
           audio.currentTime = 0;
           audio.play();
           scoreCounter++;
@@ -106,13 +106,13 @@ const resetGame = () => {
      timeLeft.innerHTML = gameTimeCount + "s";
      score.innerHTML = scoreCounter;
      gameStarted = false;
-     squares[parseInt(gridSize/2)].innerHTML = "";
+     squares[parseInt(gridSize / 2)].innerHTML = "";
 }
 
 //start the game when start button is clicked;
 start.addEventListener('click', startGame);
 grid.addEventListener('click', (e) => {
-     if (e.target.parentElement.classList.contains('mole') && !clicked){
+     if (e.target.parentElement.classList.contains('mole') && !clicked) {
           countScore();
           clicked = true;
      }
@@ -121,4 +121,4 @@ reset.addEventListener('click', resetGame);
 
 const select = document.getElementById('select');
 
-select.addEventListener('change',changeMode);
+select.addEventListener('change', changeMode);
