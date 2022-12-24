@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/SachinShewale2611/JavaScript-Mini-Project---Javascript-JS-Prototypes-Prototype-Inheritance-JS-F---zianncvhu0ng](https://github.com/SachinShewale2611/JavaScript-Mini-Project---Javascript-JS-Prototypes-Prototype-Inheritance-JS-F---zianncvhu0ng)
-- Live Site URL: [https://sachin-whack-a-mole.netlify.app/](https://sachin-whack-a-mole.netlify.app/)
+- Live Site URL: [https://game-whack-a-mole.netlify.app/](https://game-whack-a-mole.netlify.app/)
 
 ## My process
 
