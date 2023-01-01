@@ -1,6 +1,6 @@
 # Whack-a-mole
 
-Whack a mole is a game in which there is a mole in the grid and you have to hit it under a time limit as many times as you can.
+Whack a mole is a game in which there is a mole in the grid and to score you have to hit it under a time limit, mole keeps changing its location.
 ## Table of contents
 
 - [Overview](#overview)
